@@ -1,6 +1,6 @@
 <?php
 
-namespace baseblocks\frontend\blocks;
+namespace zephir\luya\baseblocks\frontend\blocks;
 
 use luya\cms\base\PhpBlock;
 use app\blockgroups\LinkingGroup;

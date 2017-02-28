@@ -1,6 +1,6 @@
 <?php
 
-namespace baseblocks\frontend\blocks;
+namespace zephir\luya\baseblocks\frontend\blocks;
 
 use luya\cms\frontend\blockgroups\LayoutGroup;
 use luya\cms\base\PhpBlock;

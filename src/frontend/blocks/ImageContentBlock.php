@@ -1,6 +1,6 @@
 <?php
 
-namespace baseblocks\frontend\blocks;
+namespace zephir\luya\baseblocks\frontend\blocks;
 
 use luya\cms\base\PhpBlock;
 use luya\cms\frontend\blockgroups\ProjectGroup;
@@ -10,7 +10,7 @@ use baseblocks\frontend\Module;
 /**
  * Image Block.
  *
- * File has been created with `block/create` command on LUYA version 1.0.0-dev. 
+ * File has been created with `block/create` command on LUYA version 1.0.0-dev.
  */
 class ImageContentBlock extends PhpBlock
 {
@@ -29,7 +29,7 @@ class ImageContentBlock extends PhpBlock
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.
      */
     public $cacheEnabled = true;
-    
+
     /**
      * @var int The cache lifetime for this block in seconds (3600 = 1 hour), only affects when cacheEnabled is true
      */
@@ -50,7 +50,7 @@ class ImageContentBlock extends PhpBlock
     {
         return  Module::t('block_imagecontent');
     }
-    
+
     /**
      * @inheritDoc
      */
@@ -58,7 +58,7 @@ class ImageContentBlock extends PhpBlock
     {
         return 'image'; // see the list of icons on: https://design.google.com/icons/
     }
- 
+
     /**
      * @inheritDoc
      */
@@ -98,8 +98,8 @@ class ImageContentBlock extends PhpBlock
             'link' => new \luya\cms\injectors\LinkInjector(['append' => true]),
         ];
     }
-    
-    
+
+
     /**
      * @inheritDoc
      */
@@ -112,7 +112,7 @@ class ImageContentBlock extends PhpBlock
     }
 
     /**
-     * {@inheritDoc} 
+     * {@inheritDoc}
      *
      * @param {{extras.image}}
      * @param {{placeholders.content}}

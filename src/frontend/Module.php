@@ -1,6 +1,6 @@
 <?php
 
-namespace baseblocks\frontend;
+namespace zephir\luya\baseblocks\frontend;
 
 use Yii;
 
