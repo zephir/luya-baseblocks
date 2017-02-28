@@ -11,25 +11,18 @@ use Yii;
  */
 class Module extends \luya\base\Module
 {
-    public function init()
-    {
-        parent::init();
-        $this->registerTranslations();
-    }
-
-    public function registerTranslations()
-    {
-        Yii::$app->i18n->translations['modules/baseblocks'] = [
-            'class' => 'yii\i18n\PhpMessageSource',
-            'basePath' => '@app/modules/baseblocks/messages',
+    public $translations = [
+        [
+            'prefix' => 'baseblocks*',
+            'basePath' => '@baseblocks/messages',
             'fileMap' => [
-                'modules/baseblocks' => 'baseblocks.php',
+                'baseblocks' => 'baseblocks.php',
             ],
-        ];
-    }
+        ],
+    ];
 
     public static function t($message, array $params = [])
     {
-        return Yii::t('modules/baseblocks', $message, $params, Yii::$app->luyaLanguage);
+        return Yii::t('baseblocks', $message, $params, Yii::$app->luyaLanguage);
     }
 }

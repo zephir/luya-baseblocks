@@ -10,9 +10,19 @@ In order to add the modules to your project go into the modules section of your 
 return [
     'modules' => [
         // ...
-        'baseblocks' => 'app\modules\baseblocks\frontend\Module',
-        'baseblocksadmin' => 'app\modules\baseblocks\admin\Module',
+        'baseblocks' => 'zephir\luya\baseblocks\frontend\Module',
+        'baseblocksadmin' => 'zephir\luya\baseblocks\admin\Module',
         // ...
     ],
 ];
+```
+
+PSR-4 Binding in Composer JSON:
+
+```json
+"autoload": {
+        "psr-4": {
+            "zephir\\luya\\baseblocks\\" : "../luya-baseblocks/src"
+        }
+    },
 ```
