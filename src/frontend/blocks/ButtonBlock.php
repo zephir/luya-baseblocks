@@ -2,6 +2,7 @@
 
 namespace zephir\luya\baseblocks\frontend\blocks;
 
+use Yii;
 use luya\cms\base\PhpBlock;
 use app\blockgroups\LinkingGroup;
 use luya\cms\helpers\BlockHelper;

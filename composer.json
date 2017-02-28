@@ -1,19 +1,29 @@
 {
   "name" : "zephir/luya-baseblocks",
-  "description" : "",
+  "description" : "Set of basic blocks for LUYA CMS",
   "type" : "luya-module",
-  "keywords" : ["luya", "core", "yii2", "yii", "cms", "admin"],
+  "keywords" : ["luya", "blocks", "yii2", "yii", "cms", "admin"],
   "license": "MIT",
   "homepage" : "http://zephir.ch",
   "authors" : [
     {
-      "name" : "Basil Suter",
-      "email" : "git@nadar.io",
-      "homepage" : "https://github.com/nadar"
+      "name" : "Marc Stampfli",
+      "email" : "marc.stampfli@zephir.ch",
+      "homepage" : "https://github.com/zephir"
+    },
+    {
+      "name" : "Silvan Hahn",
+      "email" : "silvan.hahn@zephir.ch",
+      "homepage" : "https://github.com/zephir"
+    },
+    {
+      "name" : "Roland Schaub",
+      "email" : "roland.schaub@zephir.ch",
+      "homepage" : "https://github.com/zephir"
     }
   ],
   "support" : {
-    "issues" : "https://github.com/luyadev/luya/issues"
+    "issues" : "https://github.com/zephir/luya-baseblocks/issues"
   },
   "autoload" : {
     "psr-4" : {
