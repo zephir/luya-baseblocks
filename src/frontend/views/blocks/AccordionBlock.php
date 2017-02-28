@@ -4,7 +4,7 @@
  */
 // See: https://tympanus.net/codrops/2012/02/21/accordion-with-css3/
 
-use baseblocks\frontend\assets\BaseblockAsset;
+use zephir\luya\baseblocks\frontend\assets\BaseblockAsset;
 
 BaseblockAsset::register($this->appView);
 ?>

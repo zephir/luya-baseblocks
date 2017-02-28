@@ -4,7 +4,7 @@ namespace zephir\luya\baseblocks\frontend\blocks;
 
 use luya\cms\base\PhpBlock;
 use luya\cms\frontend\blockgroups\TextGroup;
-use baseblocks\frontend\Module;
+use zephir\luya\baseblocks\frontend\Module;
 
 /**
  * Heading Block.

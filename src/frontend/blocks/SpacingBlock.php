@@ -5,7 +5,7 @@ namespace zephir\luya\baseblocks\frontend\blocks;
 use luya\cms\frontend\blockgroups\LayoutGroup;
 use luya\cms\base\PhpBlock;
 use luya\cms\helpers\BlockHelper;
-use baseblocks\frontend\Module;
+use zephir\luya\baseblocks\frontend\Module;
 
 /**
  * Spacing Block.

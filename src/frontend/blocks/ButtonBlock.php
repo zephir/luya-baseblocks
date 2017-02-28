@@ -5,7 +5,7 @@ namespace zephir\luya\baseblocks\frontend\blocks;
 use luya\cms\base\PhpBlock;
 use app\blockgroups\LinkingGroup;
 use luya\cms\helpers\BlockHelper;
-use baseblocks\frontend\Module;
+use zephir\luya\baseblocks\frontend\Module;
 
 /**
  * Crosslink Block.

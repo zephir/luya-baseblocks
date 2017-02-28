@@ -6,7 +6,7 @@ use luya\TagParser;
 use luya\cms\base\PhpBlock;
 use luya\cms\frontend\blockgroups\TextGroup;
 use luya\cms\helpers\BlockHelper;
-use baseblocks\frontend\Module;
+use zephir\luya\baseblocks\frontend\Module;
 
 /**
  * Text Block.
