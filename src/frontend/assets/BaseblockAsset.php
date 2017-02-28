@@ -9,4 +9,8 @@ class BaseblockAsset extends \luya\web\Asset
     public $js = [
         'js/accordion.js'
     ];
+
+    public $depends = [
+        'yii\web\JqueryAsset',
+    ];
 }
