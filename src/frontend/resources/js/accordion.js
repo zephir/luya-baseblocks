@@ -1,15 +1,16 @@
 $(document).ready(function(){
-    var url = document.location.href;
-    var idx = url.indexOf("#");
-    var hash = idx != -1 ? url.substring(idx+1) : "";
     
-    targetAccordion(hash);
+    targetAccordion();
     
     $('a[href*=\\#]').click(function(){
-    	targetAccordion(hash)
+    	targetAccordion();
     });
 	
-	function targetAccordion(hash) {
+	function targetAccordion(hash) {	
+		var url = document.location.href;
+		var idx = url.indexOf("#");
+		var hash = idx != -1 ? url.substring(idx+1) : "";
+    
 		if (hash != "") {
 	
 			// Check checkbox or radio button that has id equal to url hash
