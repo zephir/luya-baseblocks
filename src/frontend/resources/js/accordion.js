@@ -9,6 +9,6 @@ $(document).ready(function(){
 
         // After opening accordion, jump to accordion (as position has changed
         // after opening the accordion in the previous step)
-        location.href = "#" + hash;
+        // location.href = "#" + hash;
     }
 });
