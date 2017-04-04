@@ -5,7 +5,7 @@ $(document).ready(function(){
     
     setTimeout(function(){
     	targetAccordion(hash)
-    }, 500);
+    }, 800);
     
     $('a[href*=\\#]').click(function(){
     	targetAccordion(hash)
