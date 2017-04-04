@@ -3,9 +3,7 @@ $(document).ready(function(){
     var idx = url.indexOf("#");
     var hash = idx != -1 ? url.substring(idx+1) : "";
     
-    setTimeout(function(){
-    	targetAccordion(hash)
-    }, 800);
+    targetAccordion(hash);
     
     $('a[href*=\\#]').click(function(){
     	targetAccordion(hash)

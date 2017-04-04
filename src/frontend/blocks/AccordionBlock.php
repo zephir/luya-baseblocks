@@ -27,7 +27,7 @@ class AccordionBlock extends PhpBlock
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.
      */
-    public $cacheEnabled = true;
+    public $cacheEnabled = false;
 
     /**
      * @var int The cache lifetime for this block in seconds (3600 = 1 hour), only affects when cacheEnabled is true
