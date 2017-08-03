@@ -62,6 +62,7 @@ class ButtonBlock extends PhpBlock
         return [
             'vars' => [
                  ['var' => 'label', 'label' => Module::t('block_button_label'), 'type' => self::TYPE_TEXT],
+                 ['var' => 'newWindow', 'label' => Module::t('block_button_new_window'), 'type' => self::TYPE_CHECKBOX],
             ],
             'cfgs' => [
                 ['var' => 'cssClass', 'label' => Module::t('css_class'), 'type' => 'zaa-text'],

@@ -60,6 +60,7 @@ return [
     'block_button' => 'Button',
     'block_button_label' => 'Button-Label',
     'block_button_empty' => 'Es wurde noch kein Link angeben.',
+    'block_button_new_window' => 'Link in neuem Fenster öffnen',
 
     // Columns
     'block_columns_name' => 'Spalten',
