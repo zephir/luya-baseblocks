@@ -23,6 +23,6 @@ class Module extends \luya\base\Module
 
     public static function t($message, array $params = [])
     {
-        return Yii::t('baseblocks', $message, $params, Yii::$app->luyaLanguage);
+        return Yii::t('baseblocks', $message, $params);
     }
 }
