@@ -33,6 +33,11 @@
   "extra": {
     "branch-alias": {
       "dev-master": "1.0.x-dev"
-    }
+    },
+    "luya" : {
+        "blocks": [
+            "src/frontend/blocks"
+        ] 
+    }  
   }
 }
