@@ -31,7 +31,7 @@ $link = $this->extraValue('link');
         <? if ($link): ?>
             <a class="image__link" href="<?= $link ?>">
         <? endif;?>
-                <img alt="<?= $alt ?>" class="image__item" src="<?= $image->source ?>"<? if ($maxWidth || $maxHeight ): ?> style="<? if ($maxWidth): ?> max-width: <?= $maxWidth ?>;<? endif; ?><?if ($maxHeight): ?> max-height: <?= $maxHeight ?>;<? endif; ?>"<? endif; ?> />
+                <img alt="<?= $alt ?>" class="image__item" src="<?= $image->httpSource ?>"<? if ($maxWidth || $maxHeight ): ?> style="<? if ($maxWidth): ?> max-width: <?= $maxWidth ?>;<? endif; ?><?if ($maxHeight): ?> max-height: <?= $maxHeight ?>;<? endif; ?>"<? endif; ?> />
         <? if ($link): ?>
             </a>
         <? endif; ?>
