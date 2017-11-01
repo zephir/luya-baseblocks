@@ -31,9 +31,9 @@ if ($legend) {
 }
 
 if ($link && $imageObj) {
-    $image = '<a class="imagecontent__link" href="' . $link . '" target="' . $link->getTarget() . '"> <img class="imagecontent__item" src="' . $imageObj->httpSource . '""/></a>';
+    $image = '<a class="imagecontent__link" href="' . $link . '" target="' . $link->getTarget() . '"> <img class="imagecontent__item" src="' . $imageObj->source . '""/></a>';
 } elseif (!$link && $imageObj) {
-    $image = '<img class="imagecontent__item" src="' . $imageObj->httpSource . '"/>';
+    $image = '<img class="imagecontent__item" src="' . $imageObj->source . '"/>';
 }
 ?>
 
@@ -85,7 +85,7 @@ if ($link && $imageObj) {
                  } ?>;">
                 <? if ($link):?> <a class="imagecontent__link" href="<?= $link ?>" target="<?= $link->getTarget(); ?>"> <? endif; ?>
                     <img class="imagecontent__item imagecontent__item--float"
-                         src="<?= $imageObj->httpSource ?>" />
+                         src="<?= $imageObj->source ?>" />
                     <? if ($link):?> </a> <? endif; ?>
                 <?= $legend ?>
             </div>
