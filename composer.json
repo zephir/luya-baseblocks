@@ -25,6 +25,9 @@
   "support" : {
     "issues" : "https://github.com/zephir/luya-baseblocks/issues"
   },
+  "require" : {
+    "luyadev/luya-module-cms" : "~1.0.5"
+  },
   "autoload" : {
     "psr-4" : {
       "zephir\\luya\\baseblocks\\" : "src/"
