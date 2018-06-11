@@ -6,7 +6,7 @@
 
 use zephir\luya\baseblocks\frontend\assets\BaseblockAsset;
 
-BaseblockAsset::register($this->appView);
+BaseblockAsset::register($this);
 ?>
 <?php $session = Yii::$app->session; ?>
 <?php if (!$this->env('isPrevEqual')): ?>
