@@ -127,6 +127,4 @@ class ImageContentBlock extends PhpBlock
         return '{% if vars.image is not empty %}<img src="{{ extras.imageAdmin.source }}" style="max-width: 100%" /> '
         . '{% else %}<span class="block__empty-text">' . Module::t('block_imagecontent_empty') . '</span>{% endif %}';
     }
-
-
 }

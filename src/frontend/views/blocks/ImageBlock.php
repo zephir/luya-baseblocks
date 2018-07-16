@@ -26,19 +26,19 @@ if (empty($caption) && $image) {
 $hideCaption = $this->cfgValue('hideCaption');
 $link = $this->extraValue('link');
 ?>
-<? if ($this->varValue('image')): ?>
+<?php if ($this->varValue('image')): ?>
     <figure class="image">
-        <? if ($link): ?>
+        <?php if ($link): ?>
             <a class="image__link" href="<?= $link ?>">
-        <? endif;?>
-                <img alt="<?= $alt ?>" class="image__item" src="<?= $image->source ?>"<? if ($maxWidth || $maxHeight ): ?> style="<? if ($maxWidth): ?> max-width: <?= $maxWidth ?>;<? endif; ?><?if ($maxHeight): ?> max-height: <?= $maxHeight ?>;<? endif; ?>"<? endif; ?> />
-        <? if ($link): ?>
+        <?php endif;?>
+                <img alt="<?= $alt ?>" class="image__item" src="<?= $image->source ?>"<?php if ($maxWidth || $maxHeight ): ?> style="<?php if ($maxWidth): ?> max-width: <?= $maxWidth ?>;<?php endif; ?><?php if ($maxHeight): ?> max-height: <?= $maxHeight ?>;<?php endif; ?>"<?php endif; ?> />
+        <?php if ($link): ?>
             </a>
-        <? endif; ?>
-        <?if (!$hideCaption && $caption): ?>
+        <?php endif; ?>
+        <?php if (!$hideCaption && $caption): ?>
             <figcaption class="image__caption"<? if ($maxWidth): ?> style="max-width: <?= $maxWidth ?>;"<? endif; ?>>
                 <?= $caption ?>
             </figcaption>
-        <?endif; ?>
+        <?php endif; ?>
     </figure>
-<? endif; ?>
+<?php endif; ?>

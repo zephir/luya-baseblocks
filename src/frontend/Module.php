@@ -11,13 +11,13 @@ use Yii;
  */
 class Module extends \luya\base\Module
 {
-	public static function onLoad()
-	{
-		self::registerTranslation('baseblocks', static::staticBasePath() . '/messages', [
-			'baseblocks' => 'baseblocks.php',
-		]);
-	}
-	
+    public static function onLoad()
+    {
+        self::registerTranslation('baseblocks', static::staticBasePath() . '/messages', [
+            'baseblocks' => 'baseblocks.php',
+        ]);
+    }
+    
     
     public static function t($message, array $params = [])
     {

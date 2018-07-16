@@ -9,5 +9,4 @@ namespace zephir\luya\baseblocks\admin;
  */
 class Module extends \luya\admin\base\Module
 {
-
 }

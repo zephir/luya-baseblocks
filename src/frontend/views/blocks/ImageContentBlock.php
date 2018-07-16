@@ -1,8 +1,8 @@
 <?php
 /**
- * View file for block: ImageBlock 
+ * View file for block: ImageBlock
  *
- * File has been created with `block/create` command on LUYA version 1.0.0-dev. 
+ * File has been created with `block/create` command on LUYA version 1.0.0-dev.
  *
  * @param $this->extraValue('image');
  * @param $this->placeholderValue('content');
@@ -37,9 +37,9 @@ if ($link && $imageObj) {
 }
 ?>
 
-<? if ($row): ?> <div class="row"> <? endif;?>
-    <? if (!($float)): ?>
-        <? if ($position == 1): ?>
+<?php if ($row): ?> <div class="row"> <?php endif;?>
+    <?php if (!($float)): ?>
+        <?php if ($position == 1): ?>
             <div class="imagecontent__wrapper<?= $width ? " col-sm-" .  $width : " col-sm-12" ?>">
                 <?= $image ?>
                 <?= $legend ?>
@@ -47,7 +47,7 @@ if ($link && $imageObj) {
             <div class="imagecontent__content <?= $width ? " col-sm-" . floor(12 - $width) : " col-sm-12" ?>">
                 <?= $placeholder ?>
             </div>
-        <? elseif ($position == 2): ?>
+        <?php elseif ($position == 2): ?>
             <div class="imagecontent__content <?= $width ? " col-sm-" .  floor(12 - $width) : " col-sm-12" ?>">
                 <?= $placeholder ?>
             </div>
@@ -55,7 +55,7 @@ if ($link && $imageObj) {
                 <?= $image ?>
                 <?= $legend ?>
             </div>
-        <? elseif ($position == 3): ?>
+        <?php elseif ($position == 3): ?>
             <div class="imagecontent__wrapper col-sm-12 imagecontent__wrapper--center">
                 <?= $image ?>
                 <?= $legend ?>
@@ -63,13 +63,13 @@ if ($link && $imageObj) {
             <div class="imagecontent__content col-sm-12" >
                 <?= $placeholder ?>
             </div>
-        <? endif;?>
+        <?php endif;?>
 
-    <? elseif ($float == 1): ?>
+    <?php elseif ($float == 1): ?>
         <div class="imagecontent__wrapper imagecontent__wrapper--float col-sm-12">
             <div class="imagecontent__floathelper"
-                 style="<?if ($position == 1): ?>float:left; padding-right: 10px; <? elseif ($position == 2): ?>float:right; padding-left: 10px;  <? elseif ($position == 3): ?>text-align:center;<?endif;?>width:<?
-                 switch($width) {
+                 style="<?if ($position == 1): ?>float:left; padding-right: 10px; <?php elseif ($position == 2): ?>float:right; padding-left: 10px;  <?php elseif ($position == 3): ?>text-align:center;<?php endif;?>width:<?php
+                 switch ($width) {
                      case 3:
                          echo "25%";
                          break;
@@ -83,16 +83,16 @@ if ($link && $imageObj) {
                          echo "100%";
                          break;
                  } ?>;">
-                <? if ($link):?> <a class="imagecontent__link" href="<?= $link ?>" target="<?= $link->getTarget(); ?>"> <? endif; ?>
+                <?php if ($link):?> <a class="imagecontent__link" href="<?= $link ?>" target="<?= $link->getTarget(); ?>"> <?php endif; ?>
                     <img class="imagecontent__item imagecontent__item--float"
                          src="<?= $imageObj->source ?>" />
-                    <? if ($link):?> </a> <? endif; ?>
+                    <?php if ($link):?> </a> <?php endif; ?>
                 <?= $legend ?>
             </div>
             <div class="imagecontent__content imagecontent__content--floating" >
                 <?= $placeholder ?>
             </div>
         </div>
-    <? endif ?>
-<? if ($row): ?> </div> <? endif;?>
+    <?php endif ?>
+<?php if ($row): ?> </div> <?php endif;?>
 

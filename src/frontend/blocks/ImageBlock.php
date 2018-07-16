@@ -80,8 +80,8 @@ class ImageBlock extends PhpBlock
         ];
     }
 
-    public function getText() {
-
+    public function getText()
+    {
         return TagParser::convertWithMarkdown($this->getVarValue('caption'));
     }
 
