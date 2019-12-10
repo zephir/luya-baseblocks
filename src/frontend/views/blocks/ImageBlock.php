@@ -31,12 +31,12 @@ $link = $this->extraValue('link');
         <?php if ($link): ?>
             <a class="image__link" href="<?= $link ?>">
         <?php endif;?>
-                <img alt="<?= $alt ?>" class="image__item" src="<?= $image->source ?>"<?php if ($maxWidth || $maxHeight ): ?> style="<?php if ($maxWidth): ?> max-width: <?= $maxWidth ?>;<?php endif; ?><?php if ($maxHeight): ?> max-height: <?= $maxHeight ?>;<?php endif; ?>"<?php endif; ?> />
+                <img alt="<?= $alt ?>" class="image__item" src="<?= $image->source ?>"<?php if ($maxWidth || $maxHeight): ?> style="<?php if ($maxWidth): ?> max-width: <?= $maxWidth ?>;<?php endif; ?><?php if ($maxHeight): ?> max-height: <?= $maxHeight ?>;<?php endif; ?>"<?php endif; ?> />
         <?php if ($link): ?>
             </a>
         <?php endif; ?>
         <?php if (!$hideCaption && $caption): ?>
-            <figcaption class="image__caption"<? if ($maxWidth): ?> style="max-width: <?= $maxWidth ?>;"<? endif; ?>>
+            <figcaption class="image__caption"<?php if ($maxWidth): ?> style="max-width: <?= $maxWidth; ?>;"<?php endif; ?>>
                 <?= $caption ?>
             </figcaption>
         <?php endif; ?>

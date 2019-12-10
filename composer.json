@@ -2,9 +2,9 @@
   "name" : "zephir/luya-baseblocks",
   "description" : "Set of basic blocks for LUYA CMS",
   "type" : "luya-module",
-  "keywords" : ["luya", "blocks", "yii2", "yii", "cms", "admin"],
+  "keywords" : ["luya", "blocks", "cms", "content"],
   "license": "MIT",
-  "homepage" : "http://zephir.ch",
+  "homepage" : "https://zephir.ch",
   "authors" : [
     {
       "name" : "Marc Stampfli",
