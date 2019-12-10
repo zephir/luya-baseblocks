@@ -25,18 +25,20 @@
   "support" : {
     "issues" : "https://github.com/zephir/luya-baseblocks/issues"
   },
-  "require" : {
-    "luyadev/luya-module-cms" : "~1.0.5"
+  "require-dev" : {
+    "luyadev/luya-testsuite" : "^1.0"
   },
   "autoload" : {
     "psr-4" : {
       "zephir\\luya\\baseblocks\\" : "src/"
     }
   },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\" : "tests/"
+    }
+  },
   "extra": {
-    "branch-alias": {
-      "dev-master": "1.0.x-dev"
-    },
     "luya" : {
         "blocks": [
             "src/frontend/blocks"

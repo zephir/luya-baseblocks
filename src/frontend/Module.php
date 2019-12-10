@@ -13,7 +13,7 @@ class Module extends \luya\base\Module
 {
     public static function onLoad()
     {
-        self::registerTranslation('baseblocks', static::staticBasePath() . '/messages', [
+        self::registerTranslation('baseblocks*', static::staticBasePath() . '/messages', [
             'baseblocks' => 'baseblocks.php',
         ]);
     }
